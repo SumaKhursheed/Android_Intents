@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00506b"
+    tools:context="com.example.implicitintents.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <Button
+        android:id="@+id/button_launch"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#fff90d"
+        android:textColor="#161616"
+        android:text="Launch"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/design_line"
+        android:layout_alignLeft="@+id/button_ring"
+        android:layout_alignStart="@+id/button_ring" />
+
+    <Button
+        android:id="@+id/button_ring"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#d1423e"
+        android:textColor="#ffffff"
+        android:text="Ring"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="26dp"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/button_closeApp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_closeApp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickButtonCloseApp"
+        android:text="Close Application"
+        android:textColor="#ffffff"
+        android:background="#0d0d0c"
+        tools:layout_editor_absoluteY="447dp"
+        tools:layout_editor_absoluteX="112dp"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/id_nick_name"
+        android:layout_width="190dp"
+        android:layout_height="30dp"
+        android:background="@drawable/border_style"
+        android:layout_alignBaseline="@+id/phone"
+        android:layout_alignBottom="@+id/phone"
+        android:layout_alignRight="@+id/id_nick_name2"
+        android:layout_alignEnd="@+id/id_nick_name2" />
+
+
+    <TextView
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="URL:"
+        android:textSize="20dp"
+        android:textColor="#e3ffff"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/button_launch"
+        android:layout_alignLeft="@+id/design_line"
+        android:layout_alignStart="@+id/design_line"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:textSize="20dp"
+        android:textColor="#e3ffff"
+        tools:layout_editor_absoluteY="248dp"
+        tools:layout_editor_absoluteX="343dp"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/button_ring"
+        android:layout_alignLeft="@+id/url"
+        android:layout_alignStart="@+id/url" />
+
+    <TextView
+        android:id="@+id/textView_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#deffff"
+        android:text="Implicit Intents"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/url"
+        android:layout_toEndOf="@+id/url" />
+
+    <ImageView
+        android:id="@+id/design_line"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/id_nick_name"
+        android:layout_alignLeft="@+id/design_line2"
+        android:layout_alignStart="@+id/design_line2"
+        android:background="#6c7b72"
+        />
+
+    <ImageView
+        android:id="@+id/design_line2"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:background="#6c7b72"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/button_closeApp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_ring"
+        android:layout_toStartOf="@+id/button_ring"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:id="@+id/id_nick_name2"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+
+        android:background="@drawable/border_style"
+        android:layout_alignBaseline="@+id/url"
+        android:layout_alignBottom="@+id/url"
+        android:layout_alignRight="@+id/textView_heading"
+        android:layout_alignEnd="@+id/textView_heading" />
+
+
+</RelativeLayout>
